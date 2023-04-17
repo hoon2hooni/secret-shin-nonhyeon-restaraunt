@@ -40,25 +40,23 @@ const insertNoteStatement = `INSERT INTO notes(title, body, created_at, updated_
   RETURNING *`;
 const seedData = [
   [
-    'Meeting Notes',
-    'This is an example note. It contains **Markdown**!',
+    '반피차이',
+    '신논현역 맛집...태국 음식 아주 굿 대박이에용~!',
     randomDateBetween(startOfThisYear, now),
   ],
   [
-    'Make a thing',
-    `It's very easy to make some words **bold** and other words *italic* with
-Markdown. You can even [link to React's website!](https://www.reactjs.org).`,
+    '프로티너',
+    `다이어트와 맛을 동시에 ..이것 못참지 프로티너 신논현역 맛집 강추합니다~! 
+    유명 트레이너도 우연히 봤어용..`,
     randomDateBetween(startOfThisYear, now),
   ],
   [
-    'A note with a very long title because sometimes you need more words',
-    `You can write all kinds of [amazing](https://en.wikipedia.org/wiki/The_Amazing)
-notes in this app! These note live on the server in the \`notes\` folder.
-
-![This app is powered by React](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/React_Native_Logo.png/800px-React_Native_Logo.png)`,
+    '수퍼두퍼',
+    `햄버거 맛집 신논현역 맛집 수퍼두퍼 추천용~!
+이제 쉨쉨 손절 타이밍임~!`,
     randomDateBetween(startOfThisYear, now),
   ],
-  ['I wrote this note today', 'It was an excellent note.', now],
+  ['라멘모토', '오늘 점심은 츠케멘... 넘 맛나겠죵~', now],
 ];
 
 async function seed() {

@@ -44,7 +44,7 @@ export default function SidebarNoteContent({id, title, children, expandedChildre
           backgroundColor: isPending
             ? 'var(--gray-80)'
             : isActive
-            ? 'var(--tertiary-blue)'
+            ? 'var(--tertiary-green)'
             : '',
           border: isActive
             ? '1px solid var(--primary-border)'

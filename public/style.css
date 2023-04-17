@@ -83,7 +83,7 @@ select {
 :root {
   /* Colors */
   --main-border-color: #ddd;
-  --primary-border: #037dba;
+  --primary-border: #00afa0;
   --gray-20: #404346;
   --gray-60: #8a8d91;
   --gray-70: #bcc0c4;
@@ -91,19 +91,19 @@ select {
   --gray-90: #e4e6eb;
   --gray-95: #f0f2f5;
   --gray-100: #f5f7fa;
-  --primary-blue: #037dba;
-  --secondary-blue: #0396df;
-  --tertiary-blue: #c6efff;
-  --flash-blue: #4cf7ff;
-  --outline-blue: rgba(4, 164, 244, 0.6);
-  --navy-blue: #035e8c;
+  --primary-green: #00afa0;
+  --secondary-green: #6cc0b9;
+  --tertiary-green: #7ff8ee;
+  --flash-green: #7ff8ee;
+  --outline-green: #00afa0;
+  --navy-green: #1f766f;
   --red-25: #bd0d2a;
   --secondary-text: #65676b;
   --white: #fff;
   --yellow: #fffae1;
 
-  --outline-box-shadow: 0 0 0 2px var(--outline-blue);
-  --outline-box-shadow-contrast: 0 0 0 2px var(--navy-blue);
+  --outline-box-shadow: 0 0 0 2px var(--outline-green);
+  --outline-box-shadow-contrast: 0 0 0 2px var(--navy-green);
 
   /* Fonts */
   --sans-serif: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -172,7 +172,7 @@ pre code {
   background: none;
 }
 a {
-  color: var(--primary-blue);
+  color: var(--primary-green);
 }
 
 .text-with-markdown h1,
@@ -229,22 +229,22 @@ hr {
   outline-style: none;
 }
 .edit-button--solid {
-  background: var(--primary-blue);
+  background: var(--primary-green);
   color: var(--white);
   border: none;
   margin-inline-start: 6px;
   transition: all 0.2s ease-in-out;
 }
 .edit-button--solid:hover {
-  background: var(--secondary-blue);
+  background: var(--secondary-green);
 }
 .edit-button--solid:focus {
   box-shadow: var(--outline-box-shadow-contrast);
 }
 .edit-button--outline {
   background: var(--white);
-  color: var(--primary-blue);
-  border: 1px solid var(--primary-blue);
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
   margin-inline-start: 12px;
   transition: all 0.1s ease-in-out;
 }
@@ -252,7 +252,7 @@ hr {
   opacity: 0.5;
 }
 .edit-button--outline:hover:not([disabled]) {
-  background: var(--primary-blue);
+  background: var(--primary-green);
   color: var(--white);
 }
 .edit-button--outline:focus {
@@ -529,14 +529,14 @@ ul.notes-list {
 }
 .note-editor-done {
   border: none;
-  background: var(--primary-blue);
+  background: var(--primary-green);
   color: var(--white);
 }
 .note-editor-done:focus {
   box-shadow: var(--outline-box-shadow-contrast);
 }
 .note-editor-done:hover:not([disabled]) {
-  background: var(--secondary-blue);
+  background: var(--secondary-green);
 }
 .note-editor-delete {
   border: 1px solid var(--red-25);
@@ -579,7 +579,7 @@ ul.notes-list {
 }
 .label--preview {
   background: rgba(38, 183, 255, 0.15);
-  color: var(--primary-blue);
+  color: var(--primary-green);
 }
 
 .text-with-markdown p {

@@ -28,7 +28,7 @@ export default function App({selectedId, isEditing, searchText}) {
             alt=""
             role="presentation"
           />
-          <strong>React Notes</strong>
+          <strong>신논현역 맛집노트</strong>
         </section>
         <section className="sidebar-menu" role="menubar">
           <SearchField />
