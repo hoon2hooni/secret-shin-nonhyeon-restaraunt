@@ -20,15 +20,7 @@ export default function App({selectedId, isEditing, searchText}) {
     <div className="main">
       <section className="col sidebar">
         <section className="sidebar-header">
-          <img
-            className="logo"
-            src="logo.svg"
-            width="22px"
-            height="20px"
-            alt=""
-            role="presentation"
-          />
-          <strong>신논현역 맛집노트</strong>
+          <strong>🐖 신논현역 맛집 시크릿 노트</strong>
         </section>
         <section className="sidebar-menu" role="menubar">
           <SearchField />
