@@ -3,7 +3,8 @@
 - [신논현 시크릿 레스토랑](#신논현-시크릿-레스토랑)
   - [프로젝트 설명](#프로젝트-설명)
   - [실행방법](#실행방법)
-  - [DB Setup (docker사용할 예정입니다.)](#db-setup-docker사용할-예정입니다)
+  - [docker로 db실행](#docker로-db실행)
+  - [DB 데이터 셋팅](#db-데이터-셋팅)
   - [License](#license)
 
 ## 프로젝트 설명
@@ -24,10 +25,17 @@ fetch사용으로 인해 node 18버전이 필요합니다. [Node 18 LTS](https:/
   ```
 
 http://localhost:4000이 열립니다.
-## DB Setup (docker사용할 예정입니다.)
+## docker로 db실행
 
   ```
   docker-compose up
+  ```
+  - postgres
+  - pgAdmin
+## DB 데이터 셋팅
+
+  ```
+  npm run seed
   ```
 
 ## License
