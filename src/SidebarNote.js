@@ -14,9 +14,9 @@ import SidebarNoteContent from './SidebarNoteContent';
 
 export default function SidebarNote({note}) {
   const updatedAt = new Date(note.updated_at);
-  const lastUpdatedAt = isToday(updatedAt)
-    ? format(updatedAt, 'h:mm bb')
-    : format(updatedAt, 'M/d/yy');
+  // const lastUpdatedAt = isToday(updatedAt)
+  //   ? format(updatedAt, 'h:mm bb')
+  //   : format(updatedAt, 'M/d/yy');
   const summary = excerpts(marked(note.body), {words: 20});
   return (
     <SidebarNoteContent
@@ -27,7 +27,7 @@ export default function SidebarNote({note}) {
       }>
       <header className="sidebar-note-header">
         <strong>{note.title}</strong>
-        <small>{lastUpdatedAt}</small>
+        <small>{updatedAt.toISOString()}</small>
       </header>
     </SidebarNoteContent>
   );
