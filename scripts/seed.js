@@ -40,23 +40,23 @@ const insertNoteStatement = `INSERT INTO notes(title, body, created_at, updated_
   RETURNING *`;
 const seedData = [
   [
-    '반피차이',
+    'Banpichai',
     '신논현역 맛집...태국 음식 아주 굿 대박이에용~!',
     randomDateBetween(startOfThisYear, now),
   ],
   [
-    '프로티너',
+    'Protiner',
     `다이어트와 맛을 동시에 ..이것 못참지 프로티너 신논현역 맛집 강추합니다~! 
     유명 트레이너도 우연히 봤어용..`,
     randomDateBetween(startOfThisYear, now),
   ],
   [
-    '수퍼두퍼',
+    'SUperDuper',
     `햄버거 맛집 신논현역 맛집 수퍼두퍼 추천용~!
 이제 쉨쉨 손절 타이밍임~!`,
     randomDateBetween(startOfThisYear, now),
   ],
-  ['라멘모토', '오늘 점심은 츠케멘... 넘 맛나겠죵~', now],
+  ['RamenMotto', '오늘 점심은 츠케멘... 넘 맛나겠죵~', now],
 ];
 
 async function seed() {
